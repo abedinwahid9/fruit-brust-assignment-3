@@ -378,7 +378,7 @@
             <h2 class="md:text-5xl text-xl font-extrabold text-black">
               Deal of the day
             </h2>
-            <p class="md:mt-5 mt-2 md:text-base text-sm text-[#121212]">
+            <p class="md:mt-5 mt-2 md:text-base text-sm text-txt">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical <br />
               Latin literature from 45 BC, making it over 2000 years old.
@@ -458,39 +458,66 @@
         <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-12">
           <!-- item cart start -->
           <!-- cart 1 -->
-          <div class="card card-compact bg-base-100 drop-shadow-md p-12">
+          <div class="card card-compact bg-base-100 drop-shadow-md p-8">
             <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
             <div class="card-body">
               <div class="flex flex-col items-center justify-center">
-                <h2 class="text-lg font-extrabold">12.90$ - 18.85$</h2>
+                <h2 class="text-lg font-extrabold text-black">
+                  12.90$ - 18.85$
+                </h2>
                 <div class="divider"></div>
                 <p class="text-txt">Apples</p>
-                <div class="rating my-6">
+                <div class="rating my-6 rating-sm rating-half">
                   <input
                     type="radio"
                     name="rating-2"
-                    class="mask mask-star-2 bg-primary"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    class="mask mask-star-2 bg-primary"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
                     checked
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    class="mask mask-star-2 bg-primary"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    class="mask mask-star-2 bg-primary"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
                   />
                   <input
                     type="radio"
                     name="rating-2"
-                    class="mask mask-star-2 bg-primary"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 mask-half-2 bg-primary"
                   />
                 </div>
 
@@ -506,13 +533,580 @@
                     class="modal modal-bottom sm:modal-middle"
                   >
                     <form method="dialog" class="modal-box">
-                      <h3 class="font-bold text-lg">Hello!</h3>
-                      <p class="py-4">
-                        Press ESC key or click the button below to close
-                      </p>
-                      <div class="modal-action">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
+                      <div class="card card-compact lg:p-8">
+                        <figure>
+                          <img src="./images/fruit6.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <div
+                            class="flex flex-col items-center justify-center text-center"
+                          >
+                            <h2 class="text-4xl font-extrabold text-black">
+                              Apples
+                            </h2>
+
+                            <p class="text-txt mt-5">
+                              Professional employees are there for you to pick
+                              the most amazing and fresh fruits.
+                            </p>
+                            <div class="rating my-6 rating-md rating-half">
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                                checked
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary"
+                              />
+                            </div>
+                            <div class="flex flex-col gap-5"></div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button
+                                class="btn border-1 border-primary bg-transparent text-primary"
+                              >
+                                Close
+                              </button>
+                              <button class="own-btn-primary">Buy Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cart 2 -->
+          <div class="card card-compact bg-base-100 drop-shadow-md p-8">
+            <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="text-lg font-extrabold text-black">
+                  12.90$ - 18.85$
+                </h2>
+                <div class="divider"></div>
+                <p class="text-txt">Orange</p>
+                <div class="rating my-6 rating-sm rating-half">
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 mask-half-2 bg-primary"
+                  />
+                </div>
+
+                <div>
+                  <button
+                    class="text-primary text-lg"
+                    onclick="my_modal_6.showModal()"
+                  >
+                    Details
+                  </button>
+                  <dialog
+                    id="my_modal_6"
+                    class="modal modal-bottom sm:modal-middle"
+                  >
+                    <form method="dialog" class="modal-box">
+                      <div class="card card-compact lg:p-8">
+                        <figure>
+                          <img src="./images/fruit7.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <div
+                            class="flex flex-col items-center justify-center text-center"
+                          >
+                            <h2 class="text-4xl font-extrabold text-black">
+                              Orange
+                            </h2>
+
+                            <p class="text-txt mt-5">
+                              Professional employees are there for you to pick
+                              the most amazing and fresh fruits.
+                            </p>
+                            <div class="rating my-6 rating-md rating-half">
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                                checked
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary"
+                              />
+                            </div>
+                            <div class="flex flex-col gap-5"></div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button
+                                class="btn border-1 border-primary bg-transparent text-primary"
+                              >
+                                Close
+                              </button>
+                              <button class="own-btn-primary">Buy Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cart 3 -->
+          <div class="card card-compact bg-base-100 drop-shadow-md p-8">
+            <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="text-lg font-extrabold text-black">
+                  12.90$ - 18.85$
+                </h2>
+                <div class="divider"></div>
+                <p class="text-txt">Red Dragon</p>
+                <div class="rating my-6 rating-sm rating-half">
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-4"
+                    class="mask mask-star-2 mask-half-2 bg-primary"
+                  />
+                </div>
+
+                <div>
+                  <button
+                    class="text-primary text-lg"
+                    onclick="my_modal_8.showModal()"
+                  >
+                    Details
+                  </button>
+                  <dialog
+                    id="my_modal_8"
+                    class="modal modal-bottom sm:modal-middle"
+                  >
+                    <form method="dialog" class="modal-box">
+                      <div class="card card-compact lg:p-8">
+                        <figure>
+                          <img src="./images/fruit8.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <div
+                            class="flex flex-col items-center justify-center text-center"
+                          >
+                            <h2 class="text-4xl font-extrabold text-black">
+                              Red Dragon
+                            </h2>
+
+                            <p class="text-txt mt-5">
+                              Professional employees are there for you to pick
+                              the most amazing and fresh fruits.
+                            </p>
+                            <div class="rating my-6 rating-md rating-half">
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                                checked
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary"
+                              />
+                            </div>
+                            <div class="flex flex-col gap-5"></div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button
+                                class="btn border-1 border-primary bg-transparent text-primary"
+                              >
+                                Close
+                              </button>
+                              <button class="own-btn-primary">Buy Now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cart 4 -->
+          <div class="card card-compact bg-base-100 drop-shadow-md p-8">
+            <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="text-lg font-extrabold text-black">
+                  12.90$ - 18.85$
+                </h2>
+                <div class="divider"></div>
+                <p class="text-txt">Banana</p>
+                <div class="rating my-6 rating-sm rating-half">
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-1 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-7"
+                    class="mask mask-star-2 mask-half-2 bg-primary"
+                  />
+                </div>
+
+                <div>
+                  <button
+                    class="text-primary text-lg"
+                    onclick="my_modal_9.showModal()"
+                  >
+                    Details
+                  </button>
+                  <dialog
+                    id="my_modal_9"
+                    class="modal modal-bottom sm:modal-middle"
+                  >
+                    <form method="dialog" class="modal-box">
+                      <div class="card card-compact lg:p-8">
+                        <figure>
+                          <img src="./images/fruit9.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                          <div
+                            class="flex flex-col items-center justify-center text-center"
+                          >
+                            <h2 class="text-4xl font-extrabold text-black">
+                              Banana
+                            </h2>
+
+                            <p class="text-txt mt-5">
+                              Professional employees are there for you to pick
+                              the most amazing and fresh fruits.
+                            </p>
+                            <div class="rating my-6 rating-md rating-half">
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                                checked
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary mr-1"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-1 bg-primary"
+                              />
+                              <input
+                                type="radio"
+                                name="rating-2"
+                                class="mask mask-star-2 mask-half-2 bg-primary"
+                              />
+                            </div>
+                            <div class="flex flex-col gap-5"></div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button
+                                class="btn border-1 border-primary bg-transparent text-primary"
+                              >
+                                Close
+                              </button>
+                              <button class="own-btn-primary">Buy Now</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </form>
                   </dialog>
@@ -522,6 +1116,10 @@
           </div>
 
           <!-- item cart end -->
+        </div>
+        <!-- shop all button -->
+        <div class="mt-11 flex justify-center">
+          <button class="own-btn-primary">Shop All</button>
         </div>
       </section>
       <!-- deal-the-day  section end -->
