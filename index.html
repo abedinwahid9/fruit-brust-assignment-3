@@ -30,6 +30,7 @@
           extend: {
             colors: {
               primary: "#F85559",
+              txt: "#1212129A",
             },
           },
         },
@@ -59,7 +60,7 @@
   </head>
   <body class="lato-font">
     <!-- header start -->
-    <header class="container mx-auto mt-12 md:px-6 px-4 md:px-0">
+    <header class="container mx-auto lg:mt-12 mt-8 md:px-6 px-4 md:px-0">
       <!-- deskstop manu start -->
       <div class="navbar hidden lg:flex bg-primary px-4 py-3 rounded-full">
         <div class="navbar-start">
@@ -168,7 +169,7 @@
       <!-- mobile manu end -->
 
       <!-- banner section start -->
-      <section class="lg:mt-12 mt-5">
+      <section class="lg:mt-12 mt-5 relative">
         <div class="carousel w-full h-auto">
           <div
             id="slide1"
@@ -196,12 +197,12 @@
             >
               <a
                 href="#slide4"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❮</a
               >
               <a
                 href="#slide2"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❯</a
               >
             </div>
@@ -232,12 +233,12 @@
             >
               <a
                 href="#slide1"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❮</a
               >
               <a
                 href="#slide3"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❯</a
               >
             </div>
@@ -268,12 +269,12 @@
             >
               <a
                 href="#slide2"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❮</a
               >
               <a
                 href="#slide4"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❯</a
               >
             </div>
@@ -304,20 +305,227 @@
             >
               <a
                 href="#slide3"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❮</a
               >
               <a
                 href="#slide1"
-                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black hover:bg-white text-white focus:outline-none border-0 hover:text-black text-center"
                 >❯</a
               >
             </div>
           </div>
         </div>
+
+        <!-- banner footer section start -->
+        <div
+          class="lg:w-4/5 md:w-full hidden md:grid grid-cols-5 lg:p-5 p-3 gap-3 place-items-center rounded-lg drop-shadow-2xl bg-white absolute lg:bottom-[-18%] lg:left-[50%] lg:translate-x-[-50%] text-center"
+        >
+          <div class="md:w-4/5 flex flex-col items-center">
+            <img
+              class="lg:w-36 lg:h-36 w-20 h-20 object-fit"
+              src="./images/fruit1.png"
+              alt="grape"
+            />
+            <p class="text-txt pt-3 lg:text-lg text-sm">Grape</p>
+          </div>
+          <div class="md:w-4/5 flex flex-col items-center">
+            <img
+              class="lg:w-36 lg:h-36 w-20 h-20 object-fit"
+              src="./images/fruit2.png"
+              alt="grape"
+            />
+            <p class="text-txt pt-3 lg:text-lg text-sm">Orange</p>
+          </div>
+          <div class="md:w-4/5 flex flex-col items-center">
+            <img
+              class="lg:w-36 lg:h-36 w-20 h-20 object-fit"
+              src="./images/fruit3.png"
+              alt="grape"
+            />
+            <p class="text-txt pt-3 lg:text-lg text-sm">Mango</p>
+          </div>
+          <div class="md:w-4/5 flex flex-col items-center">
+            <img
+              class="lg:w-36 lg:h-36 w-20 h-20 object-fit"
+              src="./images/fruit4.png"
+              alt="grape"
+            />
+            <p class="text-txt pt-3 lg:text-lg text-sm">Strawberry</p>
+          </div>
+          <div class="md:w-4/5 flex flex-col items-center">
+            <img
+              class="lg:w-36 lg:h-36 w-20 h-20 object-fit"
+              src="./images/fruit5.png"
+              alt="grape"
+            />
+            <p class="text-txt pt-3 lg:text-lg text-sm">Pomegranate</p>
+          </div>
+        </div>
+        <!-- banner footer section end -->
       </section>
       <!-- banner section end -->
     </header>
     <!-- header end -->
+    <!-- main start -->
+    <main
+      class="lg:mt-52 mt-5 md:mt-44 container mx-auto mt-12 md:px-6 px-4 md:px-0"
+    >
+      <!-- deal-the-day  section start -->
+      <section>
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 md:w-1/2 md:text-start text-center">
+            <h2 class="md:text-5xl text-xl font-extrabold text-black">
+              Deal of the day
+            </h2>
+            <p class="md:mt-5 mt-2 md:text-base text-sm text-[#121212]">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical <br />
+              Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex mt-4 flex-1 md:justify-end justify-evenly md:w-1/2">
+            <div class="flex flex-col items-center">
+              <h3 class="text-5xl font-extrabold text-black">29</h3>
+              <p class="text-txt text-xs mt-2">days</p>
+            </div>
+            <div class="mt-3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-center">
+              <h3 class="text-5xl font-extrabold text-black">15</h3>
+              <p class="text-txt text-xs mt-2">Hours</p>
+            </div>
+            <div class="mt-3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-center">
+              <h3 class="text-5xl font-extrabold text-black">15</h3>
+              <p class="text-txt text-xs mt-2">Minutes</p>
+            </div>
+            <div class="mt-3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z"
+                  stroke="#121212"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-col items-center">
+              <h3 class="text-5xl font-extrabold text-black">08</h3>
+              <p class="text-txt text-xs mt-2">Seconds</p>
+            </div>
+          </div>
+        </div>
+        <!-- fruit cart -->
+        <div class="grid gap-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-12">
+          <!-- item cart start -->
+          <!-- cart 1 -->
+          <div class="card card-compact bg-base-100 drop-shadow-md p-12">
+            <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="flex flex-col items-center justify-center">
+                <h2 class="text-lg font-extrabold">12.90$ - 18.85$</h2>
+                <div class="divider"></div>
+                <p class="text-txt">Apples</p>
+                <div class="rating my-6">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-primary"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-primary"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-primary"
+                  />
+                </div>
+
+                <div>
+                  <button
+                    class="text-primary text-lg"
+                    onclick="my_modal_5.showModal()"
+                  >
+                    Details
+                  </button>
+                  <dialog
+                    id="my_modal_5"
+                    class="modal modal-bottom sm:modal-middle"
+                  >
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">
+                        Press ESC key or click the button below to close
+                      </p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item cart end -->
+        </div>
+      </section>
+      <!-- deal-the-day  section end -->
+    </main>
+    <!-- main end -->
   </body>
 </html>
