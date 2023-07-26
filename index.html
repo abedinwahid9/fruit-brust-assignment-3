@@ -1,9 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <!-- tailwind and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lato google  font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind customize -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- style css -->
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+      .own-btn-primary {
+        padding: 15px 25px;
+        background-color: #f85559;
+        color: #ffffff;
+        font-size: 20px;
+        border-radius: 8px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .own-btn-primary {
+          padding: 5px 15px;
+          font-size: 18px;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="lato-font">
+    <!-- header start -->
+    <header class="container mx-auto mt-12 md:px-6 px-4 md:px-0">
+      <!-- deskstop manu start -->
+      <div class="navbar hidden lg:flex bg-primary px-4 py-3 rounded-full">
+        <div class="navbar-start">
+          <div class="hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="text-white xl:text-lg md:text-sm font-medium">Home</a>
+              </li>
+              <li>
+                <a class="text-white xl:text-lg md:text-sm font-medium"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="text-white xl:text-lg md:text-sm font-medium">Shop</a>
+              </li>
+              <li>
+                <a class="text-white xl:text-lg md:text-sm font-medium"
+                  >All Fruits</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <!-- logo -->
+          <a class="flex items-center gap-4 normal-case text-xl" href="#">
+            <img class="w-10 h-10" src="./\images/logo.png" alt="" />
+
+            <h1 class="text-white lg:text-3xl xl:text-4xl font-bold">
+              Fruit Burst
+            </h1>
+          </a>
+        </div>
+        <div class="navbar-end hidden md:flex">
+          <div class="flex bg-white w-3/4 py-2 px-3 mr-4 rounded-full">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="placeholder:-translate-y-0.5 focus:outline-none w-full bg-transparent placeholder:text-xs"
+            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z"
+                stroke="#121212"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- deskstop manu end -->
+      <!-- mobile manu start -->
+      <div class="navbar lg:hidden">
+        <div class="flex-1 gap-3">
+          <!-- logo -->
+          <img class="w-8 h-8" src="./\images/logo.png" alt="" />
+          <h1 class="text-xl font-bold">Fruit Burst</h1>
+        </div>
+        <div class="flex-1 justify-end">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="text-base font-medium">Home</a>
+              </li>
+              <li>
+                <a class="text-base font-medium">About Us</a>
+              </li>
+              <li>
+                <a class="text-base font-medium">Shop</a>
+              </li>
+              <li>
+                <a class="text-base font-medium">All Fruits</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- mobile manu end -->
+
+      <!-- banner section start -->
+      <section class="lg:mt-12 mt-5">
+        <div class="carousel w-full h-auto">
+          <div
+            id="slide1"
+            class="hero carousel-item relative w-full h-full bg-no-repeat bg-cover rounded-lg"
+            style="background-image: url(./images/banner1.png)"
+          >
+            <div
+              class="text-center w-full lg:pt-20 lg:pb-56 pt-6 md:pb-16 rounded-lg pb-8 bg-gradient-to-b from-[#121212c7]"
+            >
+              <h2
+                class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p
+                class="lg:my-6 my-3 font-medium md:text-base text-xs text-white"
+              >
+                We supply highly quality organic products
+              </p>
+              <button class="own-btn-primary">Shop Now</button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="hero carousel-item relative w-full h-full bg-no-repeat bg-cover rounded-lg"
+            style="background-image: url(./images/banner2.png)"
+          >
+            <div
+              class="text-center w-full lg:pt-20 lg:pb-56 pt-6 md:pb-16 rounded-lg pb-8 bg-gradient-to-b from-[#121212c7]"
+            >
+              <h2
+                class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p
+                class="lg:my-6 my-3 font-medium md:text-base text-xs text-white"
+              >
+                We supply highly quality organic products
+              </p>
+              <button class="own-btn-primary">Shop Now</button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="hero carousel-item relative w-full h-full bg-no-repeat bg-cover rounded-lg"
+            style="background-image: url(./images/banner3.png)"
+          >
+            <div
+              class="text-center w-full lg:pt-20 lg:pb-56 pt-6 md:pb-16 rounded-lg pb-8 bg-gradient-to-b from-[#121212c7]"
+            >
+              <h2
+                class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p
+                class="lg:my-6 my-3 font-medium md:text-base text-xs text-white"
+              >
+                We supply highly quality organic products
+              </p>
+              <button class="own-btn-primary">Shop Now</button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide4"
+            class="hero carousel-item relative w-full h-full bg-no-repeat bg-cover rounded-lg"
+            style="background-image: url(./images/banner4.png)"
+          >
+            <div
+              class="text-center w-full lg:pt-20 lg:pb-56 pt-6 md:pb-16 rounded-lg pb-8 bg-gradient-to-b from-[#121212c7]"
+            >
+              <h2
+                class="lg:text-7xl md:text-5xl text-2xl font-extrabold text-white"
+              >
+                Exotic tastes at your <br />
+                doorstep
+              </h2>
+              <p
+                class="lg:my-6 my-3 font-medium md:text-base text-xs text-white"
+              >
+                We supply highly quality organic products
+              </p>
+              <button class="own-btn-primary">Shop Now</button>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="flex items-center justify-center lg:w-12 md:w-8 w-6 lg:h-12 md:h-8 h-6 rounded-full bg-black text-white focus:outline-none border-0 hover:text-black text-center"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+    </header>
+    <!-- header end -->
+  </body>
 </html>
